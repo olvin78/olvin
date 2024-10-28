@@ -1,0 +1,192 @@
+.body{
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style:normal;
+  background-color: #161e31;
+}
+
+
+#colorNav{
+  color: #f9b079;
+  text-shadow: 1px 1px #000000;
+}
+
+.titulos{
+  color: #f9b079;
+}
+.tituloSobremi{
+ color: #77bfc2;
+}
+p{
+  font-size: 25px;
+  color:white;
+}
+
+#presentacionParrafo{
+  font-size: 25px;
+  margin-top: 25px;
+  text-align:left;
+  margin-left: 60px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*.line2{
+  height: 15px;
+  width: 220px;
+  background-color: #676f9d;
+}
+*/
+/*.presupuestoBoton{
+  height: 80px;
+  width: 600px;
+  padding: 15px;
+  color: #000000;
+  margin-left: 150px;
+}
+*/
+#boton-solicitud{
+  color:#f9b079;
+  text-shadow: 1px 1px #000000;
+  background-color: #617192;
+  padding-bottom: 15px;
+}
+
+.click-mano{
+  height: 55px;
+  width: 55px;
+  margin-top: 15px;
+}
+
+.click-mano:hover{
+  height: 50px;
+  width: 50px;
+}
+
+
+#olvinPresentacion,h5{
+  margin-top: 50px;
+  text-shadow: 1px 1px #000000;
+  text-align: center;
+}
+
+
+
+.dancing-script {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+}
+
+.text-aline{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: aqua;
+}
+
+
+.efectotexto:hover{
+  color:#143346;
+  transition-duration: 50ms;
+}
+.efectotexto{
+  color:black;
+  transition-duration: 50ms;
+}
+/*p{
+  color: white;
+}
+
+h1{
+  color: red;
+}*/
+
+
+
+.fotoolvin:hover{
+  background-size: 103%;
+  transition-duration: 1000ms;
+  background-position: center;
+  /*transform: rotate(10deg);*/
+  height: 500px;
+  background-repeat: no-repeat;
+  filter: grayscale(20%);
+
+}
+
+.fotoolvin{
+  background-size: 100%;
+  transition-duration: 1000ms;
+  background-position: center;
+  /*transform: rotate(0deg);*/
+  height: 500px;
+  background-repeat: no-repeat;
+  filter: grayscale(10%);
+}
+/*.radio-canada{
+  font-family: "Radio Canada Big", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}*/
+
+.regular{
+  font-family: "Sofadi One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*este es el apartado para los portafolios*/
+
+.portfolio-carousel-container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px; /* Controla el ancho máximo en pantallas grandes */
+  margin: auto;
+  position: relative;
+}
+
+.portfolio-carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-item {
+  min-width: 28%; /* Muestra tres elementos en pantallas grandes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+.portfolio-img {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+/* Estilos para tabletas (pantallas entre 768px y 1024px) */
+@media (max-width: 1024px) {
+  .portfolio-item {
+    min-width: 48%; /* Muestra dos elementos en tabletas */
+  }
+}
+
+/* Estilos para dispositivos móviles (pantallas menores a 768px) */
+@media (max-width: 768px) {
+  .portfolio-item {
+    min-width: 90%; /* Un solo elemento en pantalla completa en móviles */
+  }
+  .portfolio-img {
+    height: 250px; /* Ajusta la altura de la imagen en móvil */
+  }
+}

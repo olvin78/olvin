@@ -1,0 +1,48 @@
+ /* Contenedor del carrusel */
+ .carousel-container {
+    overflow: hidden;
+    max-width: 100%; /* Ajusta según tu diseño */
+    margin: auto;
+    position: relative;
+}
+
+/* Carrusel y animación */
+.carousel {
+    display: flex;
+    gap: 180px; /* Espaciado horizontal entre íconos */
+    animation: scroll 8s linear infinite; /* Desplazamiento continuo */
+}
+
+/* Cada ícono de tecnología */
+.carousel-item {
+    min-width: 120px; /* Asegura que los ítems tengan suficiente ancho */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ícono */
+.carousel-item i {
+    font-size: 70px;
+    color: #b4b2b2;
+    transition: color 1s ease, transform 1s ease;
+}
+
+/* Texto */
+.carousel-item span {
+    font-size: 18px;
+    color: #c5bebe;
+}
+
+/* Efecto de color y escala en hover sobre cada ícono */
+.carousel-item:hover i {
+    color: #f9b079;
+    transform: scale(0.5);
+}
+
+/* Animación de desplazamiento continuo */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
