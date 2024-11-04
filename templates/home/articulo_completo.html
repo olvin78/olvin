@@ -1,0 +1,184 @@
+{% load static %}
+
+{% load i18n %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>DETALLES DEL ARTICULO</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+
+    <style>
+        .navbar {
+
+            background-color: #161e31;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .elemento-a-ocultar {
+                display: none;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .elemento-y-ocultar {
+                display: none;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body id="page-top">
+
+
+
+    <!-- Navigation-->
+
+
+    <nav class="navbar navbar-expand-lg" aria-label="Tenth navbar example">
+
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08"
+                aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active dancing-script" style="font-size: 17px" aria-current="page" href="#"
+                            id="colorNav"><b>Olvin
+                                Duarte</b></a>
+                    </li>
+                    <!--enlaces en el navbar-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Inicio" id="colorNav"><b>Inicio</b></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Servicio" id="colorNav"><b>Servicio</b></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home_app:blog' %}" id="colorNav"><b>Blog</b></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobremi" id="colorNav"><b>Sobre mí</b></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true" href="#Contact" id="colorNav"><b>Contacto</b></a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Masthead-->
+
+    <section class="page-section" id="services" style="padding-bottom: 0%; margin-bottom: 0%;">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase" style="text-shadow: 2px 2px 5px white;">
+                    Blog</h2>
+                <h3 class="section-subheading text-muted" style="text-shadow: 2px 2px 5px white;">
+                    Últimas novedades!.</h3>
+            </div>
+
+        </div>
+
+    </section>
+    <!--esto es para hacer aparecer en pantallas grandes la publicidad-->
+
+    <div class="container text-center elemento-a-ocultar">
+        <div class="row">
+            <!--fin de los anuncios de el apartadoi de articulo completo-->
+            <div class="col-2">
+            </div>
+            <div class="col-8">
+                <div class="container">
+                    <div class="row">
+                        <div class=" text-start">
+                            <p style="color:gray">
+                                {{ articulo.fecha_hora|date:"Y/m/d" }} | {{ articulo.autor }}</p>
+                            <h1>{{ articulo.titulo }}</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-8 mt-5 mb-5">
+                            <img src="{{ articulo.imagen.url }}" class="w-100">
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                    <div class="row">
+                        <p>{{ articulo.cuerpo|safe }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+            </div>
+        </div>
+    </div>
+
+    <!--pruava para desaparecer contenido segun pantallas pequenas-->
+
+    <div class="container elemento-y-ocultar">
+
+        <div class="row">
+            <div class="col-12">
+                <p style="color:gray">
+                    {{ articulo.fecha_hora|date:"Y/m/d" }} | {{ articulo.autor }}</p>
+                <h1 class="text-left">{{ articulo.titulo }}</h1>
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-2"></div>
+
+            <div class="col-8 p-0">
+                <img src="{{ articulo.imagen.url }}" class="w-100">
+            </div>
+
+            <div class="col-2"></div>
+
+        </div>
+
+        <div class="row">
+
+            <p style="font-size: 20px;">{{ articulo.cuerpo|safe }}</p>
+
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

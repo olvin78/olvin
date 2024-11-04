@@ -35,4 +35,17 @@ urlpatterns = [
     ),
 
 
+    path('Blog',
+        views.BlogView.as_view(),
+        name='blog',
+    ),
+
+    
+    path('blog/articulo/<int:pk>/',
+        views.BlogDetailView.as_view(),
+        name='blog-detail'
+        
+        ),
+
+
 ]
