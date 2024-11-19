@@ -46,10 +46,3 @@ urlpatterns = [
         name='blog-detail'
         
         ),
-
-    path('ads',
-        views.ads.as_view(),
-        name='ads',
-    ),
-
-]
