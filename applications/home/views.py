@@ -25,6 +25,9 @@ class Politica_de_cookiesView(TemplateView):
 class AvisolegalView(TemplateView):
     template_name = "aviso-legal.html"
 
+class adsView(TemplateView):
+    template_name = "ads.txt"
+
 
 class HomePageView(ListView):
     template_name = "home/index.html"
