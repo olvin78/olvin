@@ -46,3 +46,4 @@ urlpatterns = [
         name='blog-detail'
         
         ),
+]
