@@ -26,6 +26,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             margin-bottom: 20px;
+            color: #f9b079;
         }
 
         /* Ocultar contenido en pantallas mayores a 768px */
@@ -118,9 +119,9 @@
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase" style="text-shadow: 2px 2px 5px white;">
-                    {% trans 'Blog' %}</h2>
+                    Blog</h2>
                 <h3 class="section-subheading text-muted" style="text-shadow: 2px 2px 5px white;">
-                    {% trans '¡Últimas novedades!.' %}</h3><br>
+                    ¡Últimas novedades!.</h3><br>
             </div>
 
         </div>
@@ -149,7 +150,7 @@
                         <img src="{{ entrada_blog.imagen.url }}" class="w-100">
                     </div>
 
-                    <div class="col col-lg-6 col-md-12  col-sm-12  text-center">
+                    <div class="col col-lg-6 col-md-12  col-sm-12  text-center mb-4">
                         <a href="{% url 'home_app:blog-detail' entrada_blog.id %}" style="text-decoration: none;">
                             <p>{{ entrada_blog.resumen|safe }} <button class="btn"
                                     style="border: 60%;color:white; background-color:green;">Leer
