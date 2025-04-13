@@ -12,9 +12,26 @@
   text-shadow: 1px 1px #000000;
 }
 
-.titulos{
+.titulos i {
   color: #f9b079;
 }
+
+.titulos {
+  color: #f9b079;
+}
+
+.bg-dark {
+  background-color: #161e31 !important;
+}
+
+.rounded-4 {
+  border-radius: 30px;
+}
+
+.shadow {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
 .tituloSobremi{
  color: #77bfc2;
 }
@@ -22,29 +39,50 @@ p{
   font-size: 25px;
   color:white;
 }
-
-#presentacionParrafo{
-  font-size: 25px;
-  margin-top: 25px;
-  text-align:left;
-  margin-left: 60px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.bloque-presentacion {
+  padding: 60px 30px;
+  background-color: #2d3250;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  margin-bottom: 60px;
 }
 
-/*.line2{
-  height: 15px;
-  width: 220px;
-  background-color: #676f9d;
+.presentacion-optimizada {
+  font-size: 20px;
+  color: white;
+  line-height: 1.6;
+  text-align: center;
+  padding: 0 10px;
+  max-width: 480px;
+  margin: 0 auto;
 }
-*/
-/*.presupuestoBoton{
-  height: 80px;
-  width: 600px;
-  padding: 15px;
-  color: #000000;
-  margin-left: 150px;
+
+.cta-destacada {
+  color: #f9b079;
+  font-weight: 600;
+  font-style: italic;
+  display: block;
+  margin-top: 15px;
+  font-size: 18px;
 }
-*/
+
+@media (max-width: 576px) {
+  .presentacion-optimizada {
+    font-size: 16.5px;
+    line-height: 1.5;
+    padding: 0 5px;
+    max-width: 100%;
+  }
+
+  .bloque-presentacion {
+    padding: 40px 20px;
+  }
+
+  .cta-destacada {
+    font-size: 16px;
+  }
+}
+
 #boton-solicitud{
   color:#f9b079;
   text-shadow: 1px 1px #000000;
@@ -188,5 +226,61 @@ h1{
   }
   .portfolio-img {
     height: 250px; /* Ajusta la altura de la imagen en móvil */
+  }
+}
+
+.presentacion-bg {
+  background-color: #2d3250;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.boton-solicitud {
+  background-color: #f9b079;
+  color: #161e31;
+  font-weight: bold;
+  text-shadow: none;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.boton-solicitud:hover {
+  background-color: #ffa260;
+  transform: scale(1.05);
+  color: white;
+}
+
+.cambioDeFoto {
+  background-size: cover;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('{% static "img/fotoeditada1.png" %}');
+  height: 600px;
+  background-color: #2d3250;
+  border-radius: 10px;
+  transition: all 0.6s ease-in-out;
+}
+
+.cambioDeFoto:hover {
+  background-image: url('{% static "img/fotoeditada2.png" %}');
+  background-size: contain;
+  filter: grayscale(20%);
+}
+
+@media (max-width: 768px) {
+  .presentacion-bg {
+    flex-direction: column-reverse;
+  }
+
+  #presentacionParrafo {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .cambioDeFoto {
+    height: 350px;
+    border-radius: 0;
   }
 }

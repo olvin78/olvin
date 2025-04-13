@@ -1,51 +1,75 @@
 {% load static %}
 
-
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-  <!--esta es la parte para google adsense-->
+  <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7368947938518365"
     crossorigin="anonymous"></script>
   <meta name="google-adsense-account" content="ca-pub-7368947938518365">
 
-  <!--aca termina la parte de google  adsense-->
-
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-80FQB637GL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-80FQB637GL');
+  </script>
 
-  <meta name="description"
-    content=" Olvin Darte Programador Web en Euskadi, toda España,Costa Rica y Nicragua, Desarrollador de paginas web, (Re) diseño de páginas web, tiendas online y posicionamiento SEO, info@olvinduarte.com">
-  <meta name="keywords"
-    content=" Olvin Duarte, Desarrollo web, Euskadi, España, Nicaragua, Costa Rica, diseño web, desarrollo de aplicaciones, sitios web, programación web, desarrollo de software">
-  <meta name="author" content="">
+  <!-- SEO local -->
+  <meta name="description" content="Olvin Duarte, desarrollador web en Oiartzun, Lezo, Errenteria, Irun, Hondarribia, Pasajes y Donostia. Diseño y desarrollo de páginas web, tiendas online y SEO para negocios locales en Euskadi.">
+  <meta name="keywords" content="Olvin Duarte, desarrollador web Oiartzun, diseño web Irun, programación web Donostia, tiendas online Hondarribia, posicionamiento SEO Errenteria, freelance Lezo, páginas web Pasajes, desarrollo web Euskadi">
+  <meta name="author" content="Olvin Duarte">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Olvin Duarte - Desarrollo WEB Euskadi Costa Rica Nicaragua</title>
+  <title>Desarrollador Web en Oiartzun, Irun, Donostia | Olvin Duarte</title>
+
+  <!-- Estilos principales -->
   <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/carousel.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- Tipografías -->
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Sofadi+One&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Sofadi+One&display=swap"
-    rel="stylesheet">
 
-  <!--esto es leafles para mapas-->
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- Leaflet para mapas -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <!--termina los de los mapas-->
 
-  <!--este codigo es para una prueeba de las tecnologias-->
-  <link rel="stylesheet" href="{% static 'css/carousel.css' %}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <!--termina el codigop de prueba de las tecnologias-->
+  <!-- Datos estructurados para SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Olvin Duarte",
+    "jobTitle": "Desarrollador Web",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Oiartzun",
+      "addressRegion": "Gipuzkoa",
+      "addressCountry": "ES"
+    },
+    "url": "https://www.olvinduarte.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/olvinduarte",
+      "https://www.instagram.com/olvinduarte",
+      "https://github.com/olvinduarte"
+    ]
+  }
+  </script>
 
+  <!-- Estilos personalizados -->
   <style>
     @media (max-width: 768px) {
       .navbar {
@@ -54,7 +78,6 @@
         background-position: 60px;
       }
     }
-
 
     .cambioDeFoto {
       background-size: 550px;
@@ -74,9 +97,9 @@
       background-color: #2d3250;
     }
   </style>
-
-
+  
 </head>
+
 
 <body class="body">
   <!--aca inicia el Menú-->
@@ -137,13 +160,13 @@
         <h3 id="olvinPresentacion"><i style="color: #f9b079 ;">OLVIN DUARTE</i></h3>
         <h5><i>FULL STACK DEVELOPER</i></h5>
         <hr>
-        <p id="presentacionParrafo"><i>¿Quieres un sitio web que no solo <br> se vea bien, sino que también<br> funcione
-            de
-            manera
-            excepcional? <br><br>¡Contáctame
-            hoy mismo!</i>
+        <p id="presentacionParrafo" class="presentacion-optimizada">
+          ¿Quieres una web moderna, rápida y profesional que represente tu negocio?<br><br>
+          Te ayudo a crear un sitio único, optimizado para buscadores, adaptable a móviles y enfocado en resultados.<br><br>
+          <span class="cta-destacada">Solicita tu presupuesto sin compromiso</span>
         </p>
-
+        
+        
 
 
         <!--div row para el boton de solicita tu cotizacion-->
@@ -342,224 +365,129 @@
 
   <!--aca terminara el apartado de los portafolios-->
 
-  <div class="container mt-5">
-    <!--inicio de container-->
-    <div class=" row pt-5">
-
-      <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-        <h1 class="titulos" id="Servicio">Servicios</h1>
+  <section id="Servicio" class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h1 class="titulos display-5">Servicios</h1>
+        <p class="text-white-50">Soluciones profesionales para potenciar tu presencia digital.</p>
       </div>
-
-    </div>
-
-    <!--fin de container-->
-
-    <div class="row">
-
-      <div class="col-lg-6 col-md-12 col-sm-12 pt-5">
-        <br><br><br><br>
-        <label for="olvin duarte desarrollo web"><img class="w-100" src="{% static 'img/responsive2.webp' %}"
-            style="border-radius: 30px;" alt=""></label>
-      </div>
-      <div class="col-lg-4 col-md-12 col-sm-12">
-        <div style=" width:30px; height:25px; background-color:#161e31; border-radius: 6px;" class="mt-3 mb-3">
+  
+      <!-- Bloque 1 -->
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="{% static 'img/web_responsive_olvin.png' %}" class="img-fluid rounded-4 shadow" alt="Diseño Web Responsive">
         </div>
-
-        <h1 class="titulos">Diseño web personalizado</h1>
-        <p>Adquiere un diseño web exclusivo, adaptado y totalmente ajustado a tu
-          identidad.
-          Puedo ayudarte
-          a construir
-          un proyecto web utilizándo las mejores prácticas y con estándares modernos
-          .</p>
-        <div style=" width:30px; height:25px; background-color: #161e31;border-radius: 6px;" class="mt-5 mb-3">
-        </div>
-
-        <h1 class="titulos">Diseño web responsive</h1>
-        <p>
-
-          En todos mis proyectos, garantizo una adaptación total de tu página web a cualquier medio
-          para ofrecer una mejor experiencia a tus usuarios, ya sea desde un ordenador, tablet o móvil.</p>
-        <div style=" width:30px; height:25px; background-color:#161e31;border-radius: 6px;" class="mt-5 mb-3">
-        </div>
-
-        <h1 class="titulos">Rediseño de sitios web</h1>
-        <p>
-
-          ¿Quieres modernizar tu página web?. Innovar desde la optimización de funcionalidades hasta el aspecto
-          visual, para aumentar la obtención de resultados en tu sitio web, es mi principal característica
-          .</p>
-
-      </div>
-      <div class="col-lg2 col-md-12 col-sm-12"></div>
-
-
-
-
-
-    </div>
-
-    <div class="row mt-5">
-      <div class="col-lg-2 col-md-12 col-sm-12"></div>
-      <div class="col-lg-4 col-md-12 col-sm-12">
-        <div style="width:30px; height:25px; background-color: #161e31; border-radius: 6px;" class="mt-3 mb-3">
-        </div>
-
-        <h1 class="titulos">Optimización para SEO</h1>
-        <p>Es muy importante conseguir que tu sitio web obtenga visibilidad y visitas
-          cualificadas mediante los buscadores. Mediante estrategias sólidas de optimización SEO puedo ayudarte
-          a
-          tener mayor relevancia en la web
-          .</p>
-        <div style=" width:30px; height:25px; background-color:#161e31;border-radius: 6px;" class="mt-5 mb-3">
-        </div>
-
-        <h1 class="titulos">Optimización de velocidad web</h1>
-        <p>
-
-          A nadie le gusta visitar páginas web que tardan mucho tiempo en cargar. Me encargo de resolver
-          problemas
-          de
-          rendimiento
-          en tu sitio web, para que no pierdas usuarios a causa de una página web lenta.</p>
-        <div style=" width:30px; height:25px; background-color:#161e31;border-radius: 6px;" class="mt-5 mb-3">
-        </div>
-
-        <h1 class="titulos">Medidas de seguridad</h1>
-        <p>
-
-          Es importante proteger tu sitio web y disminuir las brechas de seguridad para evitar pérdida o robo de
-          datos, mediante la implementación de cabeceras HTTP, puedo ayudarte a hacer más segura tu página web
-          .</p>
-
-      </div>
-      <div class="col-lg-6 col-md-12 col-sm-12 ">
-
-        <br><br><br><br>
-        <img class="w-100 velocidad" src="{% static 'img/velocidad.webp' %}"
-          alt="Optimizamos para que tu web sea más rápida">
-
-      </div>
-      <div class="col-2 col-md-12 col-sm-12"></div>
-
-
-
-
-
-    </div>
-
-
-    <div class="row mt-5">
-
-      <div class="col-lg-6 col-md-12 col-sm-12"> <br><br><br><br>
-        <img class="w-100" src="{% static 'img/hosting2.webp' %}" style="border-radius: 30px;" alt=""></div>
-
-      <div class="col-lg-4 col-md-12 col-sm-12">
-        <div style=" width:30px; height:25px; background-color:#161e31; border-radius: 6px;" class="mt-3 mb-3">
-        </div>
-
-        <h1 class="titulos">Correo corporativo</h1>
-        <p>Crear un correo eléctronico con el nombre de tu negocio o empresa, te provee
-          de
-          mayor relevancia para comunicarte en cualquier momento de forma segura, confiable y efectiva
-          con tus clientes.</p>
-        <div style=" width:30px; height:25px; background-color:#161e31;border-radius: 6px;" class="mt-5 mb-3">
-        </div>
-
-        <h1 class="titulos">Cloud hosting</h1>
-        <p>Si ya tienes un proyecto web utilizando servicios anticuados de hosting,
-          puedo
-          ayudarte a migrar cualquier tipo de plataforma a una infraestructura moderna, segura y escalable
-          .
-        </p>
-        <div style=" width:30px; height:25px; background-color:#161e31;border-radius: 6px;" class="mt-5 mb-3">
-        </div>
-
-        <h1 class="titulos">Registro de dominios</h1>
-        <p class="mb-5">
-
-          El primer paso para llevar a tu marca a internet es a través de un dominio. Dale un toque de
-          exclusividad
-          a
-          tu negocio con un dominio personalizado. ¡Consulta el tuyo ahora mismo!</p>
-
-      </div>
-
-
-    </div>
-    <div class="col-lg-2 col-md-12"></div>
-
-  </div>
-
-
-  <!--aca tinicia el apartado sobre mi-->
-
-
-
-  <div class="container-fluid  pb-5s" style="background-color: #221d1d;">
-
-
-
-    <div class=" row mb-5 pt-5">
-
-      <div class="col-lg-12  col-md-12 col-sm-12 text-center">
-        <h1 class="tituloSobremi" id="sobremi">Sobre mí</h1>
-
-        <!--<h1 class="h3">Have Turned Their Ideas Into Winning Websites</h1>-->
-
-      </div>
-
-    </div>
-
-
-    <!--aca termina el parrafo sobre mi-->
-    <div class="row" style="padding-top: 50px; padding-bottom: 90px;">
-
-
-      <div class="col-lg-2 col-md-12 col-sm-12"></div>
-
-      <div class="col-lg-5 col-md-12 col-sm-12 text-center p-5">
-
-        <h1 style="color: #f9b079;"><i>Olvin Duarte</i></h1>
-        <h2 class="mb-5" style="color: #77bfc2;font-size: 25px;"><i>Web Developer</i></h2>
-
-
-        <p class=" radio-canada-big-<uniquifier> regular" style=" font-size: 20px; text-align: left;">¡Hola!
-          Soy Olvin, "un
-          apasionado de la tecnología", me
-          encanta crear soluciones innovadoras
-          para mejorar la experiencia de los usuarios en línea, tengo la capacidad para diseñar y
-          desarrollar sitios web de alta calidad y funcionales...Siempre estoy aprendiendo nuevas técnicas,
-          para mantenerme actualizado en un campo tan cambiante.</p>
-      </div>
-
-      <div class="col-lg-3 col-md-12 col-sm-12 ">
-
-        <div class="w-100 p-5"
-          style="background-image: url('{% static "img/olvin.jpg" %}'); background-size: cover; height: 500px; border-radius: 30px;">
-
-          <div class="w-100 text-center fotoolvin"
-            style="background-image: url('{% static "img/olvin.jpg" %}'); height: 400px; padding-top: 300px;">
-
+        <div class="col-lg-6">
+          <div class="mb-4">
+            <h3 class="titulos"><i class="fa-solid fa-paintbrush me-2"></i> Diseño Web Personalizado</h3>
+            <p>Diseño exclusivo adaptado a tu marca e identidad visual. Desarrollo profesional con enfoque moderno y funcional.</p>
           </div>
-
+          <div class="mb-4">
+            <h3 class="titulos"><i class="fa-solid fa-mobile-screen me-2"></i> Responsive Design</h3>
+            <p>Tu sitio se verá perfecto en ordenadores, tablets y móviles. Experiencia de usuario garantizada.</p>
+          </div>
+          <div>
+            <h3 class="titulos"><i class="fa-solid fa-arrows-rotate me-2"></i> Rediseño de Sitios</h3>
+            <p>Renueva tu web para obtener mejores resultados. Diseño moderno + funcionalidad optimizada.</p>
+          </div>
         </div>
+      </div>
+  
+      <!-- Bloque 2 -->
+      <div class="row align-items-center mb-5 flex-lg-row-reverse">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="{% static 'img/velocidad_web_olvin.png' %}" class="img-fluid rounded-4 shadow" alt="Optimización SEO y Velocidad">
+        </div>
+        <div class="col-lg-6">
+          <div class="mb-4">
+            <h3 class="titulos"><i class="fa-solid fa-magnifying-glass me-2"></i> Optimización SEO</h3>
+            <p>Consigue visibilidad en Google y otros motores de búsqueda con estrategias SEO efectivas y actuales.</p>
+          </div>
+          <div class="mb-4">
+            <h3 class="titulos"><i class="fa-solid fa-gauge-high me-2"></i> Velocidad Web</h3>
+            <p>Mejoro el rendimiento de carga para que no pierdas usuarios por lentitud. ¡Webs rápidas, usuarios felices!</p>
+          </div>
+          <div>
+            <h3 class="titulos"><i class="fa-solid fa-shield-halved me-2"></i> Seguridad Web</h3>
+            <p>Implemento medidas para proteger tus datos y los de tus clientes. Seguridad como prioridad.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Bloque 3 -->
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="{% static 'img/donio_y_correo_web_olvin.png' %}" class="img-fluid rounded-4 shadow" alt="Servicios Hosting y Dominios">
+        </div>
+        <div class="col-lg-6">
+          <div class="mb-4">
+            <h3 class="titulos"><i class="fa-solid fa-envelope me-2"></i> Correo Corporativo</h3>
+            <p>Correo con tu propio dominio para dar mayor profesionalismo y confianza a tus clientes.</p>
+          </div>
+          <div class="mb-4">
+            <h3 class="titulos"><i class="fa-solid fa-cloud me-2"></i> Cloud Hosting</h3>
+            <p>Migra tu web a una infraestructura moderna, escalable y segura. Hosting adaptado a tus necesidades.</p>
+          </div>
+          <div>
+            <h3 class="titulos"><i class="fa-solid fa-globe me-2"></i> Registro de Dominios</h3>
+            <p>Te ayudo a elegir y registrar el dominio ideal para tu negocio. Tu identidad en la web empieza aquí.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 
-        <!--<img class="w-100" src="images/olvin.jpg" style="border-radius:50%;">-->
+
+<!--aca tinicia el apartado sobre mi-->
+<!-- Sección Sobre mí -->
+<section style="background-color: #221d1d;">
+  <div class="container py-5">
+
+    <!-- Título -->
+    <div class="text-center mb-5">
+      <h1 id="sobremi" class="tituloSobremi display-5">Sobre mí</h1>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="row align-items-center justify-content-center">
+      
+      <!-- Imagen -->
+      <div class="col-lg-5 mb-5 mb-lg-0">
+        <div class="position-relative rounded-4 overflow-hidden shadow-lg" style="height: 500px;">
+          <div class="w-100 h-100" style="
+            background-image: url('{% static "img/olvin.jpg" %}');
+            background-size: cover;
+            background-position: center;
+            filter: grayscale(10%);
+            transition: all 0.5s ease-in-out;">
+          </div>
+        </div>
       </div>
 
-      <div class=" col-lg-2 col-md-12 col-sm-12"></div>
+      <!-- Texto -->
+      <div class="col-lg-6 text-white">
+        <h2 style="color: #f9b079;"><i>Olvin Duarte</i></h2>
+        <h4 class="mb-4" style="color: #77bfc2;"><i>Web Developer</i></h4>
+
+        <p style="font-size: 18px; line-height: 1.7;">
+          ¡Hola! Soy Olvin, un apasionado de la tecnología. Me encanta crear soluciones innovadoras que mejoren la experiencia de los usuarios en línea.
+          <br><br>
+          Tengo la capacidad de diseñar y desarrollar sitios web de alta calidad, funcionales y modernos. Siempre estoy aprendiendo nuevas técnicas para mantenerme actualizado en este campo tan dinámico. Mi enfoque se basa en la mejora continua y en aportar valor real a cada proyecto.
+        </p>
+      </div>
 
     </div>
 
-
   </div>
+</section>
+<!--aca termina el apartado sobre mi-->
 
-  <!--aca termina el apartado sobre mi-->
+
+
 
 
   <!--aca inicia el apartado para las tecnologías que utilizo-->
-
   <!-- Carrusel de Tecnologías Automático -->
   <div class="carousel-container mt-5">
     <div class="carousel">
@@ -604,206 +532,189 @@
   </div>
   <!--aca termina el apartado o carousel de las tecnologias que utilizo-->
 
-  <!--aca inicia el formulario de contactar-->
 
-  <div class="container" style="padding-bottom: 100px; background-color:#161e31;background-size:cover;">
 
-    <div class=" row mb-5 p-5 mt-5">
+<!-- Sección de contacto -->
+<!-- Sección de contacto integrada -->
+<section class="py-5" style="background-color: #161e31;">
+  <div class="container">
 
-      <div class="col-lg-12 col-md-12 col-sm-12 text-center ">
-        <h1 class="mb-4" id="Contact" style="color: #f9b079;">Contacto</h1>
-
-      </div>
-
+    <!-- Título -->
+    <div class="text-center mb-5">
+      <h1 id="Contact" class="text-uppercase" style="color: #f9b079;">Contacto</h1>
+      <p class="text-white-50">¿Tienes una idea? ¿Necesitas una web? Estoy aquí para ayudarte.</p>
     </div>
 
-    <div class="row mt-5">
+    <!-- Tarjeta con formulario y video -->
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="d-flex flex-column flex-lg-row bg-dark rounded-4 overflow-hidden shadow-lg">
 
-      <!--la frase contacto esta aparte-->
-
-      <div class="col-lg-6 col-md-12 col-sm-12 m-0 mr-0">
-        <form class=" p-3" style="border-radius:15px;">
-          <div class="form-group">
-            <!--<label for="exampleFormControlInput1">Email</label>-->
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Escribe tu correo*">
+          <!-- Formulario -->
+          <div class="w-100 p-4 p-md-5" style="background-color: #1d2236;">
+            <form>
+              <div class="mb-3">
+                <input type="email" class="form-control form-control-lg" placeholder="Tu correo electrónico *" required>
+              </div>
+              <div class="mb-3">
+                <select class="form-select form-select-lg" required>
+                  <option selected disabled>Selecciona un servicio *</option>
+              
+                  <optgroup label="Desarrollo web">
+                    <option>Creación de páginas web</option>
+                    <option>Landing pages</option>
+                    <option>Tiendas online</option>
+                    <option>Blogs o revistas digitales</option>
+                    <option>Rediseño de sitios web</option>
+                  </optgroup>
+              
+                  <optgroup label="Diseño">
+                    <option>Diseño gráfico</option>
+                    <option>Identidad visual</option>
+                    <option>Diseño UX/UI</option>
+                  </optgroup>
+              
+                  <optgroup label="SEO y marketing">
+                    <option>Posicionamiento SEO</option>
+                    <option>Auditoría SEO</option>
+                    <option>Optimización para Google</option>
+                  </optgroup>
+              
+                  <optgroup label="Dominios y hosting">
+                    <option>Registro de dominios</option>
+                    <option>Hosting profesional</option>
+                    <option>Correos corporativos</option>
+                  </optgroup>
+              
+                  <optgroup label="Velocidad y seguridad">
+                    <option>Optimización de velocidad web</option>
+                    <option>Medidas de seguridad web</option>
+                    <option>Migración a HTTPS</option>
+                  </optgroup>
+              
+                  <optgroup label="Sistemas a medida">
+                    <option>TPV (punto de venta)</option>
+                    <option>Sistemas de reservas</option>
+                    <option>Paneles administrativos</option>
+                    <option>Software a medida</option>
+                  </optgroup>
+              
+                  <optgroup label="Asistentes virtuales">
+                    <option>Chatbots inteligentes</option>
+                    <option>Asistente virtual para webs</option>
+                  </optgroup>
+              
+                  <option>Otros servicios...</option>
+                </select>
+              </div>
+              
+              <div class="mb-4">
+                <textarea class="form-control form-control-lg" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-lg fw-bold text-dark" style="background-color: #f9b079;">Enviar mensaje</button>
+              </div>
+            </form>
           </div>
-          <br>
 
-          <div class="form-group">
-            <!--<label for="exampleFormControlSelect1">Selecciona una opción</label>-->
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option selected disabled>seleccionar</option>
-              <option>1 Creación de paginas web</option>
-              <option>2 Diseño gráfico</option>
-              <option>3 Dominios</option>
-              <option>4 Diseño web</option>
-              <option>4 Hosting</option>
-              <option>4 Landing page</option>
-              <option>4 Posicionamiento</option>
-              <option>4 Tiendas online</option>
-              <option>5 Otros servicios...</option>
-            </select>
+          <!-- Video -->
+          <div class="w-100 d-none d-lg-block">
+            <video autoplay muted loop playsinline style="height: 100%; width: 100%; object-fit: cover;">
+              <source src="{% static 'videorobot.mp4' %}" type="video/mp4">
+              Tu navegador no soporta video HTML5.
+            </video>
           </div>
-          <br>
 
-          <div class="form-group">
-            <!--<label for="exampleFormControlTextarea1">Escribe tu mensaje</label>-->
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-              placeholder="Escribe tu consulta"></textarea>
-          </div>
-          <br>
-          <button type="button" class="btn btn-outline-dark w-100" style="background-color:#f9b079"><b>Enviar</b>
-          </button>
-        </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!--aca inicia la seccion de mapas-->
+
+<!-- Sección de mapas -->
+<section class="py-5" style="background-color: #221d1d;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center text-uppercase" style="color: #f9b079; margin-bottom: 70px;">
+          <u><i>TU WEB SIN COMPLICACIONES</i></u>
+        </h2>
+      </div>
+    </div>
+
+    <div class="row text-center text-light">
+
+      <!-- Mapa Euskadi -->
+      <div class="col-lg-4 col-md-12 mb-4">
+        <h3 style="color: #77bfc2;"><i>Euskadi</i></h3>
+        <div id="map" style="width: 100%; height: 300px;"></div>
       </div>
 
-
-      <!--aca termina la parte del formulario de contactar-->
-
-
-      <!--aca inicia el video depues de el apartado de contactar-->
-
-      <div class="col-lg-6 col-md-12 col-sm-12">
-        <video class="w-100" autoplay muted loop playsinline style="border-radius: 50px;height: 400px;">
-          <source src="{% static 'videorobot.mp4' %}" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-
+      <!-- Mapa Nicaragua -->
+      <div class="col-lg-4 col-md-12 mb-4">
+        <h3 style="color: #77bfc2;"><i>Nicaragua</i></h3>
+        <div id="map2" style="width: 100%; height: 300px;"></div>
       </div>
 
-      <!--aca itermina el video depues de el apartado de contactar-->
-
-
+      <!-- Mapa Costa Rica -->
+      <div class="col-lg-4 col-md-12 mb-4">
+        <h3 style="color: #77bfc2;"><i>Costa Rica</i></h3>
+        <div id="map3" style="width: 100%; height: 300px;"></div>
+      </div>
 
     </div>
   </div>
+</section>
 
 
+<!-- JS: Pruebas de tecnologías -->
+<script src="{% static 'carousel.js' %}"></script>
 
+<!-- JS: Bootstrap Bundle (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
 
+<!-- JS: Leaflet Maps -->
+<script>
+  // Mapa: Euskadi
+  const map = L.map('map').setView([42.92471085566681, -2.224726126989571], 7);
 
-  <!--aca inicia la seccion de mapas-->
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
 
-  <div class="container-fluid" style="background-color:#221d1d;">
+  L.marker([43.31815747804332, -1.9811787439768613]).addTo(map);
+</script>
 
-    <!--este es el div del mapa-->
-    <div class="row pb-5">
+<script>
+  // Mapa: Nicaragua
+  const map2 = L.map('map2').setView([12.114982075245731, -86.23655551332077], 7);
 
-      <h2 style="color: #f9b079; margin-top: 70px; margin-bottom: 70px;" class="text-center"><u><i>TU WEB SIN
-            COMPLICACIONES</i></u></h2>
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map2);
 
-      <!--primer mapa-->
+  L.marker([12.114982075245731, -86.23655551332077]).addTo(map2);
+</script>
 
-      <div class="col-lg-4 text col-md-12 p-3 text-center" style="color: #77bfc2;">
-        <h3 class=""><i>Euskadi</i></h3>
-        <div class="w-100" id="map" style="height: 300px">
-        </div>
-      </div>
+<script>
+  // Mapa: Costa Rica
+  const map3 = L.map('map3').setView([9.928779589424872, -84.0906867099021], 7);
 
-      <!--segundo mapa-->
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map3);
 
-      <div class="col-lg-4 text col-md-12 p-3 text-center" style="color: #77bfc2;">
-        <h3 class=""><i>Nicaragua</i></h3>
-        <div class="w-100" id="map2" style="height: 300px">
-        </div>
-      </div>
-
-      <!--ultimo mapa-->
-
-      <div class="col-lg-4 text col-md-12 p-3 text-center" style="color: #77bfc2;">
-        <h3 class=""><i>Costa Rica</i></h3>
-        <div class="w-100" id="map3" style="height: 300px">
-        </div>
-      </div>
-
-
-    </div>
-
-
-  </div>
-
-  <!--aca termina ela seccion de mapas -->
-
-  <div class="container mt-5 ">
-
-    <div class=" row text-center">
-
-      <div class=" col col-lg-6 col-md-12" style="color: white; font-size: 23px;">
-
-        <label style="color: #f9b079;">info@olvinduarte.com</label>
-        <label style="color: #f9b079;">www.olvinduarte.com</label>
-        <label style="color: #f9b079;">Euskadi (País Vasco)</label>
-        <br><br>
-
-        <p>
-          <a href="{% url 'home_app:aviso_legal'  %}" class="text-white"
-            style="text-decoration: none;font-size: 23px;">Aviso
-            legal</a> |
-          <a href="{% url 'home_app:politica-de-cookies'  %}" class="text-white"
-            style="text-decoration: none;font-size: 23px;">Cookies</a> |
-
-
-          <a href="{% url 'home_app:politica-de-privacidad'  %}" class=" text-white"
-            style="text-decoration: none;font-size: 23px;">Política de privacidad</a>
-
-        </p>
-
-      </div>
-    </div>
-
-
-
-    <!--este es el codigop para la prueba de las tecnologias-->
-
-    <script src="{% static 'carousel.js' %}"></script>
-
-    <!--aca termina el codigo para la prueba de las tecnologias-->
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
-
-    <!--estos son los codigos de leaflet para los mapas de ubucasion-->
-    <script>
-      //Euskadi
-      var map = L.map('map').setView([42.92471085566681, -2.224726126989571], 7);
-
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-      }).addTo(map);
-
-      var marker = L.marker([43.31815747804332, -1.9811787439768613]).addTo(map);
-    </script>
-
-    <script>
-      //Nicaragua
-      var map2 = L.map('map2').setView([12.114982075245731, -86.23655551332077], 7);
-
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-      }).addTo(map2);
-
-      var marker2 = L.marker([12.114982075245731, -86.23655551332077]).addTo(map2);
-    </script>
-
-    <script>
-      //Costa Rica
-      var map3 = L.map('map3').setView([9.928779589424872, -84.0906867099021], 7);
-
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-      }).addTo(map3);
-
-      var marker3 = L.marker([9.928779589424872, -84.0906867099021]).addTo(map3);
-    </script>
-
-    <!--estos son los códigos para que funcionesleaflet para los mapas de la ubicasion-->
-
+  L.marker([9.928779589424872, -84.0906867099021]).addTo(map3);
+</script>
 
 
 </body>
